@@ -7,5 +7,7 @@
 <%= form.password_field :password %>
 <%= form.label :password_confirmation %>
 <%= form.password_field :password_confirmation %>
+<p>Are you a homeowner or tradesperson?</p>
+<%= form.select :role, User.roles.keys.reject { |r| r == 'mod'}.map { |r| [r.humanize, r] } %>
 <%= form.submit "Create user" %>
 <% end %>
