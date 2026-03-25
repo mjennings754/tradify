@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get "dashboards/homeowner", to: "dashboards#homeowner", as: :homeowner_dashboard
+  get "dashboards/tradesperson", to: "dashboards#tradesperson", as: :tradesperson_dashboard
   get "dashboard" => "dashboard#home"
   controller :sessions do
     get "login" => :new
