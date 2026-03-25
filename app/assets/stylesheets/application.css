@@ -1,3 +1,38 @@
+html {
+    width: 800px;
+}
+body {
+    margin:0;
+}
+header {
+    background-color: #00684A;
+    width:100%;
+    position: sticky;
+    height:45px;
+
+    div {
+        display: flex;
+        align-items: center;
+        height:45px;
+        padding-left: 12px;
+        padding-right:12px;
+        color:white;   
+        gap: 12px; 
+    }
+
+    a {
+        color:white;
+        text-decoration: none;
+    }
+}
+
+.btn {
+    background-color: #f6f7fa;
+    border: 1px outset darkgray;
+    color:black;
+    padding: 0px 12px;
+    text-decoration: none;
+}
 input {
     display: block;
     border: 1px inset darkgray;
